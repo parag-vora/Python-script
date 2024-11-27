@@ -126,7 +126,7 @@ def calculate_latency_and_jitter(filename):
 
 def write_to_excel(filename, latencies, Comm_App_latencies, App_Comm_latencies, Bus_Comm_latencies, Comm_Bus_latencies):
     # Path to the Excel file
-    excel_file = 'C:/Users/pvora/Desktop/Parag/Measurement/demo.xlsx' # write data in demo.xlsx file
+    excel_file = '.../demo.xlsx' # write data in demo.xlsx file
 
     try:
         workbook = load_workbook(excel_file)
@@ -148,7 +148,7 @@ def write_to_excel(filename, latencies, Comm_App_latencies, App_Comm_latencies, 
     workbook.save(excel_file)
 
 # absolute file path
-filename = 'C:/Users/pvora/Desktop/Parag/Measurement/18_with acyclic(450us).csv'  # CSV file path
+filename = '.../1_cyclic.csv'  # CSV file path
 (average_latency, jitter_minus, jitter_plus, min_latency, max_latency, latencies, Comm_App_latencies, App_Comm_latencies, Bus_Comm_latencies, Comm_Bus_latencies)  = calculate_latency_and_jitter(filename)
 
 # Write the results to an Excel sheet
